@@ -108,7 +108,7 @@ async function run() {
           const email = req.params.email;
           const query = { email: email };
           const result = await usersCollection.findOne(query);
-          res.send(result);
+          res.json(result);
       })
 
     // get all users from database
